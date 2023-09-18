@@ -39,11 +39,16 @@ public class MainController {
 		if (customer.getCmob() == 0 || customer.getCname().trim().isEmpty() || customer.getCaddress().trim().isEmpty()
 				|| customer.getEmail().trim().isEmpty())
 
-		{       System.out.println("Changes");
+
+		{                     System.out.println("Changes");
+                          System.out.println("Hello");
+
+
 			return new ResponseEntity<String>("Not Acceptable", HttpStatus.NOT_ACCEPTABLE);
 		}
 
 		customerservice.saveCustomer(customer);
+                   System.out.println("Git Practice");
 
 		return new ResponseEntity<String>("Record Created", HttpStatus.OK);
 
