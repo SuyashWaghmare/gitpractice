@@ -40,10 +40,13 @@ public class MainController {
 				|| customer.getEmail().trim().isEmpty())
 
 		{
+                          System.out.println("Hello");
+
 			return new ResponseEntity<String>("Not Acceptable", HttpStatus.NOT_ACCEPTABLE);
 		}
 
 		customerservice.saveCustomer(customer);
+                   System.out.println("Git Practice");
 
 		return new ResponseEntity<String>("Record Created", HttpStatus.OK);
 
