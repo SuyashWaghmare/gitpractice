@@ -42,6 +42,8 @@ public class MainController {
 
 		{                     System.out.println("Changes");
                           System.out.println("Hello");
+			  System.out.println("GIT Demo");
+			
 
 
 			return new ResponseEntity<String>("Not Acceptable", HttpStatus.NOT_ACCEPTABLE);
